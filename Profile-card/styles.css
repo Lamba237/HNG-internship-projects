@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+  }
+
+  /*Profile card container*/
+.profile-card {
+    width: 350px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 40px rgb(0, 0, 0, 0.4);
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+      width: 90%;
+    }
+  }
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/*Text styling*/
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.jobTitle {
+    font-size: 16px;
+    color: #ff9f43;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bio {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.location, .email {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 10px;
+}
+
+.social-links i {
+    font-size: 35px;
+}
+
+.social-links i:hover {
+    transform: scale(1.5);
+    color: black;
+
+}
+
+.clock {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 19px;
+}
+
+/*Responsive Design*/
+@media (max-width: 600px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .jobTitle {
+        font-size: 16px;
+    }
+
+    .bio {
+        font-size: 15px;
+    }
+
+    .social-links a {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}

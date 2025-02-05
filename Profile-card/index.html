@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8b7a3f2b18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="profile-card">
+        <img src="assets/profile-pic.png" alt="Profile Picture" data-testid="profilePicture">
+        <h1 class="fullName" data-testid="fullName">Simon Tanyi</h1>
+        <p class="jobTitle" data-testid="jobTitle">Frontend Developer</p>
+        <p class="bio" data-testid="shortBio">I am a passionate front-end developer eager to create intuitive and visually appealing web experiences. With a strong foundation in HTML, CSS, and JavaScript, I am continuously learning modern frameworks like React.js and Next.js. My goal is to build user-friendly applications that solve real-world problems while improving my skills through hands-on projects and collaboration. 🚀</p>
+        <p data-testid="currentLocation" class="location">Buea, Cameroon.</p>
+        <p data-testid="emailAddress" class="email">simontanyi2004@gmail.com</p>
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://www.linkedin.com/in/simon-tanyi-05a2a8258/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Lamba237" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://x.com/SimonTanyi" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <p data-testid="currentTimeUTC" class="clock"></p>
+
+        <script src="index.js"></script>
+    </section>
+</body>
+</html>
