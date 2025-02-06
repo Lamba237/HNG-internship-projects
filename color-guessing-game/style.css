@@ -1,0 +1,94 @@
+/*Global styles*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#guessing-game {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 13px rgb(0, 0, 0, 0.1);
+}
+
+/* Color Box styling*/
+.colorBox {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling the colorOptions button*/
+#colorOptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Color options button*/
+#colorOptions button {
+    width: 81px;
+    height: 81px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Color option on hovered button*/
+#colorOptions button:hover {
+    transform: scale(1.1);
+}
+
+/*Game status, RESET GAME*/
+#gameStatus {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Board Score*/
+#score {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* New game Button */
+#newGameButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newGameButton:hover {
+    background-color: magenta;  
+    font-size: 18px;
+}
+
+/* Not forgetting responsive design*/
+ @media (max-width: 400px) {
+    #colorBox {
+        width: 120px;
+        height: 120px;
+    }
+
+    #colorOptions button {
+        width: 60px;
+        height: 60px;
+    }
+ }
