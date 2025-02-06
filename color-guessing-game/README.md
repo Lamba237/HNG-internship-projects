@@ -11,4 +11,4 @@
 ![guessing-game](https://github.com/user-attachments/assets/98e26dc4-b246-4481-b0a3-0f034eaf90f7)
 
 
-[Live here](https://fanciful-lebkuchen-a33221.netlify.app/)
+[Live here](https://splendorous-brigadeiros-a59799.netlify.app/)
